@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "eaa7e626-ea12-4f60-952a-da4de623b6bc",
+		"name": "SOC_Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "844941"
+	},
+	"item": [
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJ1c2VySWQiOiI2NTRiYmZmOGM4ZGE5MjAwZDMyNTM3MDMiLCJpYXQiOjE2OTk1Mzg4MjIsImV4cCI6MTY5OTU0MjQyMn0.SUPGASV_EttAajne7LxnyqYLRNXwKat42mIXg0xvPlQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/grocery/654cea7bd0ef2cd9de225220",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"grocery",
+						"654cea7bd0ef2cd9de225220"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiaGlzaGVrQGdtYWlsLmNvbSIsInVzZXJJZCI6IjY1NGNlZTA5MjFkNjVmNTM2OTk1OWM5NSIsImlhdCI6MTY5OTU0MDUxOCwiZXhwIjoxNjk5NTQ0MTE4fQ.Nd3vlUGZfMGQAphCsrHUZML_l72bF5M3-wpbVW0eE0o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJ1c2VySWQiOiI2NTRiYmZmOGM4ZGE5MjAwZDMyNTM3MDMiLCJpYXQiOjE2OTk1MjIxMTIsImV4cCI6MTY5OTUyNTcxMn0.TI4blxHBKhg1bMQ0tZY5R7gM5Vh4eTsA6__-8X9KYUk",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/grocery/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"grocery",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJ1c2VySWQiOiI2NTRiYmZmOGM4ZGE5MjAwZDMyNTM3MDMiLCJpYXQiOjE2OTk1Mzg4MjIsImV4cCI6MTY5OTU0MjQyMn0.SUPGASV_EttAajne7LxnyqYLRNXwKat42mIXg0xvPlQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Cashew nuts22222\",\r\n    \"description\": \"Rich Indian Cashews\",\r\n    \"weight\" : \"500 gm\",\r\n    \"price\" : \"Rs. 500\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/grocery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"grocery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJ1c2VySWQiOiI2NTRiYmZmOGM4ZGE5MjAwZDMyNTM3MDMiLCJpYXQiOjE2OTk1Mzg4MjIsImV4cCI6MTY5OTU0MjQyMn0.SUPGASV_EttAajne7LxnyqYLRNXwKat42mIXg0xvPlQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\" : \"Rs. 499\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/grocery/654cea7bd0ef2cd9de225220",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"grocery",
+						"654cea7bd0ef2cd9de225220"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\" : \"Rs. 110\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/grocery/654bcda6907fa7a41ccfe468",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"grocery",
+						"654bcda6907fa7a41ccfe468"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"abhishek@gmail.com\",\r\n    \"password\" : \"abhishek123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/user/signup/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"user",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"abhishek@gmail.com\",\r\n    \"password\" : \"abhishek123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/user/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"user",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
